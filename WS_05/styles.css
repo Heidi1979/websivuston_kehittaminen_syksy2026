@@ -1,0 +1,81 @@
+Styles.css
+{
+      box-sizing: border-box;
+    }
+.responsive-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .column {
+      flex: 1;
+      padding: 10px;
+    }
+    
+    @media (max-width: 600px) {
+      .column {
+        flex: 100%;
+      }
+    }
+    .responsive-image {
+      max-width: 70%;
+      height: auto;
+    }
+    .media-query-box {
+      padding: 20px;
+      text-align: center;
+    }
+    
+    @media (max-width: 600px) {
+      .media-query-box {
+        background-color: lightcoral;
+      }
+    }
+    
+   .responsive-nav .nav-list {
+  display: flex;
+  list-style: none;
+}
+/* Hides the menu toggle on larger screens */
+.responsive-nav .menu-toggle {
+  display: none;
+}
+
+
+@media (max-width: 600px) {
+  .responsive-nav .nav-list {
+    display: none;
+  }
+
+  .responsive-nav .menu-toggle {
+    display: block;
+  }
+}
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #46d2e2;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+body {
+      background-color: rgb(200, 229, 208);
+      font-family: verdana, sans-serif;
+      font-size: 12px;
+    }
